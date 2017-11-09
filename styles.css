@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header {
+	height:100px;
+	background-color: #EAEDF0;
+}
+
+.searchbar {
+	height:100px;
+	background-color: #B2D6FF;
+}
+
+.nav {
+	height:100px;
+	background-color: #F09A9D;
+}
+
+.sidebar {
+	height:100px;
+	background-color: #F5CF8E;
+}
+
+.footer {
+	height:100px;
+	background-color: grey;
+}
