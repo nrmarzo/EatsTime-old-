@@ -1,22 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Food Delivery System</title>
+  <title>bootstrap test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <style>
+    body {
+    font-family: sans-serif;
+    background: tomato;
+    }
+
+    .center{
+    margin: auto;
+    width: 68%;
+    }
+
+    .grid {
+    max-width: 2000px;
+    }
+
+    .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+    }
+
+    .grid-item {
+    width: 160px;
+    height: 120px;
+    Margin-Bottom: 10px;
+    float: right;
+    background: #efeff4;
+    border: 3px solid;
+    border-color: #999999;
+    border-radius: 10px;
+    }
+
+    .grid-item {
+    width: 200px;
+    height: 100px;
+    }
+
+    .grid-item--width1 { width: 240px; }
+    .grid-item--width2 { width: 320px; }
+    .grid-item--width3 { width: 480px; }
+    .grid-item--width4 { width: 640px; }
+
+    .grid-item--height2 { height: 200px; }
+		.grid-item--height2 { height: 200px; }
+    .grid-item--height3 { height: 250px; }
+    .grid-item--height4 { height: 360px; }
+
+  </style>
 </head>
-
 <body>
-	<header>
-		<h1>Food Delivery System</h1>
-	</header>
+  <div class="jumbotron text-center" style="background: tomato;">
+    <h1>Test Grid Page</h1>
+  </div>
 
-	<a href="search-restos.html">Search Restaurants</a>
-	<br>
-	<a href="search-menu.html">Search Menus</a>
+  <div class="center">
+    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth":180, "gutter": 10}'>
+      <div class="grid-item grid-item--width2 grid-item--height4">Carousel </div>
+      <div class="grid-item grid-item--width3">Search bar</div>
+      <div class="grid-item grid-item--width1 grid-item--height3">Browse All</div>
+      <div class="grid-item grid-item--width1 grid-item--height3">Top Picks</div>
+   </div>
+  </div>
 
 </body>
-
 </html>
