@@ -47,11 +47,11 @@
 
 .gallery-container {
 	height:512px;
+	overflow: auto;
 	background-color: #F09A9D;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	overflow: auto;
 
 	/*TODO: Responsive height?*/
 }
