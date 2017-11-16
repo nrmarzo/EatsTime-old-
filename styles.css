@@ -6,17 +6,17 @@
 
 .header-container {
 	background-color: #ED5056;
-	height: 150px;
+	height: 80px;
 	display: flex;
 }
 
 .logo {
 	background-color: #FFF;
 	border-radius: 15px;
-	width: 150px;
+	width: 75px;
 	padding: 10px;
-	margin: 15px 15px;
-	/*border: 1px solid red;*/
+	margin: 8px 40px;
+	/*border: 1px solid black;*/
 }
 
 .container-1 {
@@ -28,14 +28,14 @@
 .search-box {
 	background-color: #EAEDF0;
 	background-image: url('images/search-icon.png');
-	background-position: 10px 8px;
+	background-position: 10px 2px;
 	background-repeat: no-repeat;
 	padding-left: 40px;
 	/*margin-top: 10px;*/
-	height: 40px;
+	height: 25px;
 	width: 100%;
 	font-style: italic;
-	font-size: 1em;
+	font-size: 0.8em;
 	/*border-radius: 5px;*/
 }
 
@@ -73,6 +73,20 @@
 .resto-desc {
 	margin-top: 10px;
 	text-align: center;
+	color: black;
+}
+
+.a-desc:link {
+	text-decoration: none;
+}
+
+.a-desc:visited {
+	text-decoration: none;
+}
+
+.a-desc:hover {
+	text-decoration: underline;
+	text-decoration-color: black;
 }
 
 
