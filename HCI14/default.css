@@ -6987,7 +6987,9 @@ button.close {
 }
 @media only screen and (max-width: 320px) {
   .hd-logo img {
-    width: 50%;
+    width: 5%;
+    height: 5%;
+    float: left;
   }
   .carousel-indicators {
     bottom: 0;
@@ -7334,6 +7336,11 @@ main li {
   float: left;
   width: 800px;
   padding: 15px;
+}
+.table{
+  align-self: center;
+  height: 800px;
+  width: 800px;
 }
 .table-float-right{
   padding: 5px;
