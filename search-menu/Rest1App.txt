@@ -1,0 +1,18 @@
+House Salad
+Mixed greens with house salad dressing
+4
+Sunomono Salad
+Japanese starch noodles, pickled cucumbers
+5
+Wakame Salad
+Mixed seaweed salad
+7
+Gomae
+Boiled spinach in the sesame dressing
+4
+Tuna Gomae
+Tuna, avocado, asparagus, and boiled spinach
+8
+Creamy Spicy Tempura
+Tempura, mango, and green onions
+11
