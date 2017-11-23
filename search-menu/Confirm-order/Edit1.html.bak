@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+<table style="width:40%"
+	 align="center">
+  <tr>
+    <th align="center">YOUR INFORMATION</th>
+  </tr>
+  <tr>
+  	<td> First Name</td>
+  	<td>
+
+    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 forming">
+
+      <form role="form">
+
+        <div class="col-md-6 col-sm-6">
+
+          <div class="form-group">
+
+            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+
+          </div>
+    </td>
+  </tr>
+  <tr>
+  	<td>Last Name</td>
+  	<td> 
+        <div class="col-md-6 col-sm-6">
+
+          <div class="form-group">
+
+            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+
+          </div>
+		</td>
+  </tr>
+  <tr>
+  	<td>Phone Number</td>
+  	<td>
+          <div class="form-group">
+
+            <input type="text" class="form-control" id="phone" placeholder="(xxx)-xxx-xxxx">
+
+          </div>
+		</td>
+  </tr>
+  <tr>
+  	<td>Email</td>
+  	<td>
+          <div class="form-group">
+
+            <input type="email" class="form-control" id="email" placeholder="xxx@xxx.xx">
+
+          </div>
+		</td>
+  </tr>
+  <tr>
+  	<td>Address</td>
+  	<td>
+  		<div class="form-group">
+
+            <input type="address" class="form-control" id="address" placeholder="No. Street City">
+
+          </div>
+  	</td>
+  </tr>
+  <tr>
+  	<td>Delivery Time</td>
+  	<td>
+  				<div class="form-group">
+  					
+          	<input type="time" class="form-control" id="time" placeholder="Time">
+
+          </div>
+    </td>
+  </tr>
+  <tr>
+  	<td>Promotion Code</td>
+  	<td>
+					<div class="form-group">
+
+            <input type="text" class="form-control" id="promotionCode" placeholder="Promotion code">
+
+          </div>
+    </td>
+  </tr>
+  <tr>
+  	<td>Delivery Driver Instruction</td>
+  	<td>
+  		<div class="col-md-12 col-sm-12">
+
+          <div class="form-group">
+
+            <textarea class="form-control" id="Delivery Driver Instructions" placeholder="Delivery Driver Instructions" rows="2">
+ 				</textarea>
+  	</td>
+  </tr>
+	<tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+	<tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+  <tr>
+  	<td>
+  		<img src="back.png" width="127" height="39">
+  	</td>
+  	<td>
+  		<img src="next.png" width="127" height="39">
+  	</td>
+  </tr>
+</table>
+
+ </body>
+ </html>
