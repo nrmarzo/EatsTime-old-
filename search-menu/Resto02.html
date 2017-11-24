@@ -12,14 +12,15 @@
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <meta name="description" content="" />
 <meta name="keywords" content="" />
+<link rel="stylesheet" href="~/header.css">
 <link rel="stylesheet" href="default.css">
-<link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" type="image/x-icon" href="~/et-icon.ico" />
 </head>
 <body>
 <header>
 	<div class="header-container">
 		<a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
-	
+
     <div class="header-nav">
         <div role="navigation">
             <!--<a href="#" rel="home" class="hd-logo" title="HCI14"><img src="images/Rest1/aaa.jpg"></a>-->
@@ -84,13 +85,13 @@
     function jsfso()
     {
         var fso, tf;
-        var s = "a"; 
-        alert(s); 
+        var s = "a";
+        alert(s);
         fso = new ActiveXObject("Scripting.FileSystemObject");
-        alert("w"); 
+        alert("w");
         tf = fso.OpenTextFile("/Users/huizhezheng/Desktop/git HCI/food-del-sys/HCI14/Rest1App.txt",1);
-        alert("q"); 
-        s = tf.ReadLine();   
+        alert("q");
+        s = tf.ReadLine();
         document.getElementById("food1").innerHTML = s;
     }
     function check(x)
@@ -188,7 +189,7 @@
     function calculatePrice(x)
     {
         var foodPrice = $('#'+"price" + x).text();
-        var b = parseInt(foodPrice); 
+        var b = parseInt(foodPrice);
         totalPrice += b;
         document.getElementById("hui").innerHTML = "$" + totalPrice;
     }
@@ -198,7 +199,7 @@
         var foodPrice = $('#'+"price" + x).text();
         var b = parseInt(foodPrice);
         if(totalPrice > 0)
-        { 
+        {
             totalPrice -= b;
             document.getElementById("hui").innerHTML = "$" + totalPrice;
         }
@@ -208,16 +209,16 @@
         }
     }
     function next(x)
-    { 
+    {
         var q1 = x+1;
-        var q2 = x+2; 
+        var q2 = x+2;
         var q3 = x+3;
-        var q4 = x+4; 
-        var q5 = x+5; 
+        var q4 = x+4;
+        var q5 = x+5;
         document.getElementById("ResturantA1").src = 'images/'+ x +'.jpg';
-        document.getElementById("ResturantA2").src = 'images/'+ q1 +'.jpg';  
+        document.getElementById("ResturantA2").src = 'images/'+ q1 +'.jpg';
         document.getElementById("ResturantA3").src = 'images/'+ q2 +'.jpg';
-        document.getElementById("ResturantA4").src = 'images/'+ q3 +'.jpg';  
+        document.getElementById("ResturantA4").src = 'images/'+ q3 +'.jpg';
         document.getElementById("ResturantA5").src = 'images/'+ q4 +'.jpg';
         document.getElementById("ResturantA6").src = 'images/'+ q5 +'.jpg';
         if(x == 1)
@@ -314,7 +315,7 @@
         <li><a onclick= "next(19)">Drink</a></li>
     </ul>
 <div class="fixed-at-top">
-	<div class="image-float-left"> 
+	<div class="image-float-left">
     <ul class="main-submenu-info main-submenu-first">
         <li><a>
             <!-- The conent of the food name and discribtion and price should be changed with different resturant-->
@@ -452,7 +453,7 @@
                 </td>
   			</tr>
 		</table>
-	</div>	
+	</div>
 </div>
 </main>
 </body>

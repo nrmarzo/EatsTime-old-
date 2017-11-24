@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header-container {
+	position: fixed;
+	width: 100%;
+	background-color: #FF6600;
+	height: 80px;
+	display: flex;
+}
+
+.header-container img {
+	width: 200px;
+	padding: 10px;
+	margin: 0px 40px;
+}

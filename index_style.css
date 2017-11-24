@@ -1,0 +1,125 @@
+body{
+  background-color: #FF6600;
+}
+
+input[type=text] {
+  width: 85%;
+  box-sizing: border-box;
+  border: 2px solid #9999;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px;
+  margin-right: 10px;
+}
+
+li{
+  padding-top: 10px;
+}
+
+ol{
+  display: block;
+  padding-left: 20%;
+  font-size: 25px;
+  font-weight: bolder;
+  color: black;
+}
+
+.carousel {
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+}
+
+.center-browseall{
+  text-align: center;
+  margin: auto;
+  margin-top: 23%;
+}
+
+.center-carousel{
+  margin:auto;
+}
+
+.center-picks{
+  margin: auto;
+  margin-top: 5%;
+}
+
+.center-screen{
+  margin: auto;
+  margin-left: 12%;
+  width: 78%;
+  margin-bottom: 10%;
+}
+
+.center-search{
+  margin: auto;
+  margin-top: 3%;
+  margin-left: 3%;
+  width: 100%;
+}
+
+.grid {
+  max-width: 1500px;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 10px;
+  float: right;
+  background-color: #e8e8e8;
+  border: 4px solid;
+  border-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
+.grid-item-w1 { width: 320px; }
+.grid-item-w2 { width: 650px; }
+
+.grid-item-h1 { height: 250px; }
+.grid-item-h2 { height: 400px; }
+
+.header{
+  margin-left: 30%;
+  margin-bottom: 2%;
+  width: 40%;
+  height: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.text {
+  color: #FF6600;
+  font-size: 30px;
+  font-weight: bolder;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
