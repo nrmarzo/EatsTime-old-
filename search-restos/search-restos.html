@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
 	<div class="header-container">
 		<a href="../index.html"><img src="../et-logo.png" alt="Logo" class="logo"></a>
 		<span class="glyphicon glyphicon-shopping-cart" style="margin-left:67%;margin-top:2.5%;font-size:30px;color:white"></span>
@@ -27,11 +28,15 @@
 		<div class="filter">
 			Filter by
 			<span class="glyphicon glyphicon-menu-down" style="padding:.2em .2em;font-size:1em;color:#FF6600"></span>
+			<span style="margin-left:10%;"><br></span>
+			<span style="margin-left:10%;"><input type="radio" name="ra" onclick="filterSelection('all')" name="" checked> All Restaurants<br></span>
+			<span style="margin-left:10%;"><input type="radio" name="ra" onclick="filterSelection('open')" name="category"> Restaurants Open Now<br></span>
+			<br>
 		</div>
 
 		<div class="gallery-container">
 
-			<div class="gallery">
+			<div class="gallery open">
 				<a href="../search-menu/Resto01.html">
 					<div class="image-container">
 						<img src="images/restaurants/resto01.jpg" alt="Resto01" width="200">
@@ -41,10 +46,10 @@
 					<div class="resto-desc">
 						Resto01<br>Price<br>Delivery Fees<br>Rating
 					</div>
-			</div>
+				</div>
 			</a>
 
-			<div class="gallery">
+			<div class="gallery open">
 				<a href="../search-menu/Resto02.html">
 					<div class="image-container">
 						<img src="images/restaurants/resto02.jpg" alt="Resto02" width="150">
@@ -54,7 +59,7 @@
 					<div class="resto-desc">
 						Resto02<br>Price<br>Delivery Fees<br>Rating
 					</div>
-			</div>
+				</div>
 			</a>
 
 			<div class="gallery">
@@ -67,10 +72,10 @@
 					<div class="resto-desc">
 						Resto03<br>Price<br>Delivery Fees<br>Rating
 					</div>
-			</div>
+				</div>
 			</a>
 
-			<div class="gallery">
+			<div class="gallery open">
 				<a href="../search-menu/Resto04.html">
 					<div class="image-container">
 						<img src="images/restaurants/resto04.jpg" alt="Resto04" width="150">
@@ -80,7 +85,7 @@
 					<div class="resto-desc">
 						Resto04<br>Price<br>Delivery Fees<br>Rating
 					</div>
-			</div>
+				</div>
 			</a>
 
 			<div class="gallery">
@@ -93,7 +98,7 @@
 					<div class="resto-desc">
 						Resto05<br>Price<br>Delivery Fees<br>Rating
 					</div>
-			</div>
+				</div>
 			</a>
 
 			<div class="gallery">
@@ -106,10 +111,10 @@
 					<div class="resto-desc">
 						Resto06<br>Price<br>Delivery Fees<br>Rating
 					</div>
-			</div>
+				</div>
 			</a>
 
-			<div class="gallery">
+			<div class="gallery open">
 				<a href="../search-menu/Resto07.html">
 					<div class="image-container">
 						<img src="images/restaurants/resto07.jpg" alt="Resto07" width="150">
@@ -119,7 +124,7 @@
 					<div class="resto-desc">
 						Resto07<br>Price<br>Delivery Fees<br>Rating
 					</div>
-			</div>
+				</div>
 			</a>
 
 			<div class="gallery">
@@ -132,7 +137,7 @@
 					<div class="resto-desc">
 						Resto08<br>Price<br>Delivery Fees<br>Rating
 					</div>
-			</div>
+				</div>
 			</a>
 
 			<div class="gallery">
@@ -145,7 +150,7 @@
 					<div class="resto-desc">
 						Resto09<br>Price<br>Delivery Fees<br>Rating
 					</div>
-			</div>
+				</div>
 			</a>
 
 			<div class="gallery">
@@ -158,11 +163,60 @@
 					<div class="resto-desc">
 						Resto10<br>Price<br>Delivery Fees<br>Rating
 					</div>
-			</div>
+				</div>
 			</a>
 
 		</div>
 	</div>
+
+	<script>
+	filterSelection("all")
+	function filterSelection(c) {
+		var x, i;
+		x = document.getElementsByClassName("gallery");
+		if (c == "all") c = "";
+		for (i = 0; i < x.length; i++) {
+			removeClass(x[i], "show");
+			if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+		}
+	}
+
+	function addClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+			if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+		}
+	}
+
+	function removeClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+			while (arr1.indexOf(arr2[i]) > -1) {
+				arr1.splice(arr1.indexOf(arr2[i]), 1);
+			}
+		}
+		element.className = arr1.join(" ");
+	}
+
+	var allRadios = document.getElementsByName('re');
+	var booRadio;
+	var x = 0;
+	for(x = 0; x < allRadios.length; x++){
+
+		allRadios[x].onclick = function() {
+			if(booRadio == this){
+				this.checked = false;
+				booRadio = null;
+			}else{
+				booRadio = this;
+			}
+		};
+	}
+</script>
 
 
 </body>
