@@ -7321,7 +7321,7 @@ main li {
   height: 520px;
   overflow: auto;
   width: 100%;
-  padding:5px; 
+  padding:5px;
 }
 .float-left{
   float: left;
@@ -8470,4 +8470,8 @@ main li {
   .share span {
     width: 50%;
   }
+}
+
+.main-container {
+	padding-top: 80px;
 }

@@ -1,179 +1,163 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Personal Information</title>
-    <!--<link rel="stylesheet" href="../../../pro2/default.css">-->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
-<meta name="format-detection" content="telephone=no">
-<meta name="renderer" content="webkit">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<link rel="stylesheet" href="default.css">
-<link rel="stylesheet" href="styles.css">
-</head>
-<header>
-  <div class="header-container">
-    <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
 
-    <div class="header-nav">
-        <div role="navigation">
-            <!--<a href="#" rel="home" class="hd-logo" title="HCI14"><img src="images/Rest1/aaa.jpg"></a>-->
-            <ul class="hd-nav">
-                <li class="search-box-li">
-                    <div><input type="text" name="search-keyword" form="search-keyword"><i class="iconfont search-submit">&#xe617;</i></div>
-                    <i class="search-exit"></i></li>
-                <li><a href="index.html" name="index">Homepage<span><i class="iconfont ">&#xe6aa;</i></span></a></li>
-                <li><a href="about.html" name="about">About Us<span><i class="iconfont ">&#xe6aa;</i></span></a></li>
-                <li><a href="productlist.html" name="productlist">Resturant<span><i class="iconfont ">&#xe6aa;</i></span></a></li>
-                <li><a href="contact.html" name="contact">Ordering Online<span><i class="iconfont ">&#xe6aa;</i></span></a></li>
-            </ul>
-            <div class="motai"></div>
-            <ul>
-                <li><a><i class="iconfont search-botton">&#xe617;</i></a></li>
-                <li><a><i class="iconfont nav-bottom">&#xe61f;</i></a></li>
-            </ul>
-        </div>
-        <div class="search-box">
-            <form method="post" action="#" id="search-keyword">
-                <input type="text" name="search-keyword">
-                <span>
-                    </span>
-            </form>
-        </div>
-    </div>
-    </div>
-</header>
+<head>
+	<title>Personal Information</title>
+	<!--<link rel="stylesheet" href="../../../pro2/default.css">-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="../et-icon.ico" />
+	<link rel="stylesheet" href="default.css">
+	<link rel="stylesheet" href="../header.css">
+</head>
+
+
 
 <body>
 
-<script type="text/javascript">
-  function fk()
-  {
-    var a = "First Name: " + document.getElementById("0").value;
-    var b = "Last Name: " + document.getElementById("1").value;
-    var c = "Phone Number: " + document.getElementById("2").value;
-    var d = "Email: " + document.getElementById("3").value;
-    var e = "Address: " + document.getElementById("4").value;
-    var f = "Payment Method: " + document.getElementById("5").options[document.getElementById("5").selectedIndex].text;
-    var g = "Delivery Time: " + document.getElementById("6").value;
-    var h = "Promotion Code: " + document.getElementById("7").value;
-    var i = "Delivery Driver Instructions" + document.getElementById("8").value;
-    var z = a + "\n" + b + "\n" + c + "\n" + d + "\n" + e + "\n" + f + "\n" + g + "\n" + h + "\n" + i;
-    alert(z);
-    /*for (var i = 0; i < 8; i++)
-    {
-      var a = document.getElementById("i").value;
-      alert(a);
-      var d = a + "\n";
-    }*/
-    //alert(d);
-    if(confirm("Are you sure that all the information is correct?"))
-    {
-      location.href="http://www.google.ca";
-    }
-  }
-</script>
+	<header>
+		<div class="header-container">
+			<a href="../index.html"><img src="../et-logo.png" alt="Logo" class="logo"></a>
+			<span class="glyphicon glyphicon-shopping-cart" style="margin-left:67%;margin-top:2.5%;font-size:30px;color:white"></span>
+			<h3 style="margin-left:1%;margin-top:3%;font-size:20px;color:white">$ 49.00</h3>
+		</div>
+	</header>
+
+	<script type="text/javascript">
+		function fk() {
+			var a = "First Name: " + document.getElementById("0").value;
+			var b = "Last Name: " + document.getElementById("1").value;
+			var c = "Phone Number: " + document.getElementById("2").value;
+			var d = "Email: " + document.getElementById("3").value;
+			var e = "Address: " + document.getElementById("4").value;
+			var f = "Payment Method: " + document.getElementById("5").options[document.getElementById("5").selectedIndex].text;
+			var g = "Delivery Time: " + document.getElementById("6").value;
+			var h = "Promotion Code: " + document.getElementById("7").value;
+			var i = "Delivery Driver Instructions" + document.getElementById("8").value;
+			var z = a + "\n" + b + "\n" + c + "\n" + d + "\n" + e + "\n" + f + "\n" + g + "\n" + h + "\n" + i;
+			alert(z);
+			/*for (var i = 0; i < 8; i++)
+			{
+			  var a = document.getElementById("i").value;
+			  alert(a);
+			  var d = a + "\n";
+			}*/
+			//alert(d);
+			if (confirm("Are you sure that all the information is correct?")) {
+				location.href = "http://www.google.ca";
+			}
+		}
+	</script>
+
+	<div class="main-container">
 
 
-<table style="width:40%"
-	 align="center">
-  <tr>
-    <th colspan="2" align="center" >YOUR INFORMATION</th>
-  </tr>
+		<table style="width:40%" align="center">
+			<tr>
+				<th colspan="2" align="center">YOUR INFORMATION</th>
+			</tr>
 
-  <tr>
-  	<td align="center">   <br>   <br>First Name</td>
-  	<td align="center">
-    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 forming">
-      <form role="form">
-        <div class="col-md-6 col-sm-6">
-          <div class="form-group">
-              <br>
-                <br>
-            <input type="text" class="form-control" id="0" placeholder="First Name">
-          </div>
-    </td>
-  </tr>
-  <tr>
-  	<td align="center">Last Name</td>
-  	<td align="center">
-        <div class="col-md-6 col-sm-6">
-          <div class="form-group">
-            <input type="text" class="form-control" id="1" placeholder="Last Name">
-          </div>
-		</td>
-  </tr>
-  <tr>
-  	<td align="center">Phone Number</td>
-  	<td align="center">
-          <div class="form-group">
-            <input type="text" class="form-control" id="2" placeholder="(xxx)-xxx-xxxx">
-          </div>
-		</td>
-  </tr>
-  <tr>
-  	<td align="center">Email</td>
-  	<td align="center">
-          <div class="form-group">
-            <input type="email" class="form-control" id="3" placeholder="xxx@xxx.xx">
-          </div>
-		</td>
-  </tr>
-  <tr>
-  	<td align="center">Address</td>
-  	<td align="center">
-  		<div class="form-group">
-            <input type="address" class="form-control" id="4" placeholder="No. Street City">
-          </div>
-  	</td>
-  </tr>
-  <tr>
-    <td align="center">Payment Method</td>
-    <td align="center"> <select id = "5">
+			<tr>
+				<td align="center"> <br> <br>First Name</td>
+				<td align="center">
+					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 forming">
+						<form role="form">
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<br>
+									<br>
+									<input type="text" class="form-control" id="0" placeholder="First Name">
+								</div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">Last Name</td>
+				<td align="center">
+					<div class="col-md-6 col-sm-6">
+						<div class="form-group">
+							<input type="text" class="form-control" id="1" placeholder="Last Name">
+						</div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">Phone Number</td>
+				<td align="center">
+					<div class="form-group">
+						<input type="text" class="form-control" id="2" placeholder="(xxx)-xxx-xxxx">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">Email</td>
+				<td align="center">
+					<div class="form-group">
+						<input type="email" class="form-control" id="3" placeholder="xxx@xxx.xx">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">Address</td>
+				<td align="center">
+					<div class="form-group">
+						<input type="address" class="form-control" id="4" placeholder="No. Street City">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">Payment Method</td>
+				<td align="center"> <select id="5">
       <option value = "0">Cash</option>
       <option value = "1">Credit Card</option>
       <option value = "2">Debit Card</option>
     </select>
-    </td>
-  </tr>
+				</td>
+			</tr>
 
-  <tr>
-  	<td align="center">Delivery Time</td>
-  	<td align="center">
-  				<div class="form-group">
-          	<input type="time" class="form-control" id="6" placeholder="Time">
-          </div>
-    </td>
-  </tr>
-  <tr>
-  	<td align="center">Promotion Code</td>
-  	<td align="center">
+			<tr>
+				<td align="center">Delivery Time</td>
+				<td align="center">
 					<div class="form-group">
-            <input type="text" class="form-control" id="7" placeholder="Promotion code">
-          </div>
-    </td>
-  </tr>
-  <tr>
-  	<td align="center">Delivery Driver Instructions</td>
-  	<td align="center">
-  		<div class="form-group">
-            <input type="text" class="form-control" id="8" placeholder="Delivery Driver Instructions">
-          </div>
-  	</td>
-  </tr>
-  <tr>
-  	<td align="center">  <br>  <br>  <br>  <br>
-  		<img src="back.png" width="127" height="39" onclick = "fk()">
-  	</td>
-  	<td align="center">  <br>  <br>  <br>  <br>
-  		<img src="next.png" onclick = "fk()" width="127" height="39">
-  	</td>
-  </tr>
-</table>
+						<input type="time" class="form-control" id="6" placeholder="Time">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">Promotion Code</td>
+				<td align="center">
+					<div class="form-group">
+						<input type="text" class="form-control" id="7" placeholder="Promotion code">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">Delivery Driver Instructions</td>
+				<td align="center">
+					<div class="form-group">
+						<input type="text" class="form-control" id="8" placeholder="Delivery Driver Instructions">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center"> <br> <br> <br> <br>
+					<img src="back.png" width="127" height="39" onclick="fk()">
+				</td>
+				<td align="center"> <br> <br> <br> <br>
+					<img src="next.png" onclick="fk()" width="127" height="39">
+				</td>
+			</tr>
+		</table>
 
- </body>
- </html>
+		</div>
+</body>
+
+</html>
