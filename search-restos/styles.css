@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+body{
+	background-color: #e8e8e8;
+}
+
 .main-container {
 	display: flex;
 	flex-direction: column;
@@ -28,7 +32,7 @@
 	position: fixed;
 	margin-top: 9%;
 	width: 100%;
-	height: 5%;
+	height: 11.5%;
 	padding: 3px 10px;
 	background-color: #c1c1c1;
 	font-weight: bolder;
@@ -36,7 +40,7 @@
 }
 
 .gallery-container {
-	margin-top: 135px;
+	margin-top: 15%;
 	/*height:512px;*/
 	/*overflow: auto;*/
 	background-color: #e8e8e8;
@@ -47,6 +51,7 @@
 
 .gallery {
 	margin: 30px 30px;
+	display: none;
 }
 
 .image-container {
@@ -84,4 +89,8 @@
 .footer {
 	height:100px;
 	background-color: grey;
+}
+
+.show {
+  display: block;
 }
