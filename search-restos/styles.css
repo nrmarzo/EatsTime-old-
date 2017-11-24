@@ -70,7 +70,8 @@ body{
 .resto-desc {
 	margin-top: 10px;
 	text-align: center;
-	color: #FF6600;
+	font-weight: bolder;
+	color: black;
 }
 
 .a-desc:link {

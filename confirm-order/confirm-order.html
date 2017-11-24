@@ -3,12 +3,9 @@
 
 <head>
 	<title>Confirm Your Order</title>
-	<!--<link rel="stylesheet" href="../../../pro2/default.css">-->
+
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 	<meta name="format-detection" content="telephone=no">
-	<meta name="renderer" content="webkit">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Cache-Control" content="no-siteapp" />
 	<meta name="description" content="" />
@@ -16,6 +13,9 @@
 	<link rel="shortcut icon" type="image/x-icon" href="../et-icon.ico" />
 	<link rel="stylesheet" href="confirm-order-styles.css">
 	<link rel="stylesheet" href="../header.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -41,6 +41,11 @@
 					<th></th>
 					<th></th>
 					<th></th>
+				</tr>
+				<tr style="font-weight:bolder">
+					<td class="item" id="Row1">Item Name</td>
+					<td class="amount" id="Amount1">Quantity</td>
+					<td class="prices" id="Prices1">Price</td>
 				</tr>
 				<tr>
 					<td class="item" id="Row1">House Salad</td>
@@ -72,20 +77,13 @@
 					<td class="amount" id="Amount6">x2</td>
 					<td class="prices" id="Prices6">$ 4.00</td>
 				</tr>
-				<!-- <tr>
-					<td class="item">Subtotal: </td>
-					<td class="amount"></td>
-					<td class="prices">$ 49.00</td>
-				</tr> -->
+				</table>
 
-			</table>
-
-
-
-			<table class="summary">
+				<table class="summary">
 				<tr>
+					<td class="item"></td>
 					<th class="amount"></th>
-					<th class="prices"></th>
+					<td class="prices"></td>
 				</tr>
 				<tr>
 					<td class="item">Subtotal: </td>
@@ -116,9 +114,5 @@
 
 	</div>
 </body>
-
-<script src="lib/jquery/jquery.js"></script>
-<script src="lib/bootstrap/bootstrap.js"></script>
-<script src="js/main.js"></script>
 
 </html>

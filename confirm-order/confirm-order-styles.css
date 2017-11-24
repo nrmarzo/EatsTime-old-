@@ -4,14 +4,19 @@
 	box-sizing: border-box;
 }
 
+body{
+	font-family: sans-serif;
+}
+
 .main-container {
 	padding-top: 80px;
 }
 
 .my-order {
 	padding: 20px 0px 10px 50px;
-	font-weight: bold;
+	font-weight: bolder;
 	font-size: 2em;
+	margin-left: 2%;
 }
 
 .tables-container {
@@ -37,7 +42,7 @@
 }
 
 th td {
-	text-align: right;
+	text-align: left;
 	padding: 8px;
 	border-bottom: 1px solid #ddd;
 }
@@ -47,21 +52,22 @@ td {
 }
 
 .item {
+	text-align: center;
 	width: 200px;
 }
 
 .amount {
-	text-align: right;
+	text-align: center;
 	width: 100px;
 }
 
 .prices {
 	width: 100px;
-	text-align: right;
+	text-align: left;
 }
 
 .order-list tr:nth-child(even) {
-	background-color: #f2f2f2
+	background-color: #dde5ff
 }
 
 .back-button {
