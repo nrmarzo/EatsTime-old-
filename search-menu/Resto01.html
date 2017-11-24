@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="../header.css">
 	<link rel="stylesheet" href="default.css">
 	<link rel="shortcut icon" type="image/x-icon" href="../et-icon.ico" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -23,7 +25,10 @@
 
 		<div class="header-container">
 			<a href="../index.html"><img src="../et-logo.png" alt="Logo" class="logo"></a>
+			<span class="glyphicon glyphicon-shopping-cart" style="margin-left:67%;margin-top:2.5%;font-size:30px;color:white"></span>
+			<h3 style="margin-left:1%;margin-top:3%;font-size:20px;color:white">$0.00</h3>
 		</div>
+
 		<!-- <div class="header-container">
 			<a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
 
@@ -290,174 +295,193 @@
 
 	<main>
 
-		<ul class="main-submenu">
-			<li><a onclick="next(1)">Appetizers</a></li>
-			<li><a onclick="next(7)">Salads</a></li>
-			<li><a onclick="next(13)">Dessert</a></li>
-			<li><a onclick="next(19)">Drinks</a></li>
-		</ul>
 
-		<div class="fixed-at-top">
-			<div class="image-float-left">
-				<ul class="main-submenu-info main-submenu-first">
-					<li>
-						<a>
-							<!-- The conent of the food name and discribtion and price should be changed with different resturant-->
-							<div class="food-name">
-								<p id="food1">House Salad</p>
-							</div>
-							<div class="food-price">
-								<p><span id="price1">4</span></p>
-							</div>
-							<div class="img-bg"></div>
-							<img id="ResturantA1" src="images/1.jpg"></a>
-						<div class="float-left" id="Des1">
-							<p>Mixed greens with house salad dressing</p>
-						</div>
-						<div class="float-right"><img src="images/Pluse.jpg" onclick="minusAmount(1)"></div>
-						<div class="float-right"><img src="images/1.jpg" onclick="addAmount(1)"></div>
-					</li>
-					<li>
-						<a>
-							<div class="food-name">
-								<p id="food2">Sunomono Salad</p>
-							</div>
-							<div class="food-price">
-								<p><span id="price2">5</span></p>
-							</div>
-							<div class="img-bg"></div>
-							<img id="ResturantA2" src="images/2.jpg"></a>
-						<div class="float-left" id="Des2">
-							<p>Japanese starch noodles, pickled cucumbers</p>
-						</div>
-						<div class="float-right"><img src="images/Pluse.jpg" onclick="minusAmount(2)"></div>
-						<div class="float-right"><img src="images/1.jpg" onclick="addAmount(2)"></div>
-					</li>
-					<li>
-						<a>
-							<div class="food-name">
-								<p id="food3">Wakame Salad</p>
-							</div>
-							<div class="food-price">
-								<p><span id="price3">7</span></p>
-							</div>
-							<div class="img-bg"></div>
-							<img id="ResturantA3" src="images/3.jpg"></a>
-						<div class="float-left" id="Des3">
-							<p>Mixed seaweed salad</p>
-						</div>
-						<div class="float-right"><img src="images/Pluse.jpg" onclick="minusAmount(3)"></div>
-						<div class="float-right"><img src="images/1.jpg" onclick="addAmount(3)"></div>
-					</li>
-					<li>
-						<a>
-							<div class="food-name">
-								<p id="food4">Gomae</p>
-							</div>
-							<div class="food-price">
-								<p><span id="price4">4</span></p>
-							</div>
-							<div class="img-bg"></div>
-							<img id="ResturantA4" src="images/4.jpg"></a>
-						<div class="float-left" id="Des4">
-							<p>oiled spinach in the sesame dressing</p>
-						</div>
-						<div class="float-right"><img src="images/Pluse.jpg" onclick="minusAmount(4)"></div>
-						<div class="float-right"><img src="images/1.jpg" onclick="addAmount(4)"></div>
-					</li>
-					<li>
-						<a>
-							<div class="food-name">
-								<p id="food5">Tuna Gomae</p>
-							</div>
-							<div class="food-price">
-								<p><span id="price5">8</span></p>
-							</div>
-							<div class="img-bg"></div>
-							<img id="ResturantA5" src="images/5.jpg"></a>
-						<div class="float-left" id="Des5">
-							<p>Tuna, avocado, asparagus, and boiled spinach</p>
-						</div>
-						<div class="float-right"><img src="images/Pluse.jpg" onclick="minusAmount(5)"></div>
-						<div class="float-right"><img src="images/1.jpg" onclick="addAmount(5)"></div>
-					</li>
-					<li>
-						<a>
-							<div class="food-name">
-								<p id="food6">Creamy Spicy Tempura</p>
-							</div>
-							<div class="food-price">
-								<p><span id="price6">11</span></p>
-							</div>
-							<div class="img-bg"></div>
-							<img id="ResturantA6" src="images/6.jpg"></a>
-						<div class="float-left" id="Des6">
-							<p>Tempura, mango, and green onions</p>
-						</div>
-						<div class="float-right"><img src="images/Pluse.jpg" onclick="minusAmount(6)"></div>
-						<div class="float-right"><img src="images/1.jpg" onclick="addAmount(6)"></div>
-					</li>
+
+		<div class="main-container">
+
+			<div class="sub-container-1">
+
+				<div class="resto-container">
+						<img src="images/resto01/resto01.jpg" alt="Resto01" class="resto-img">
+						Resto01
+				</div>
+
+				<ul class="main-submenu">
+					<li><a onclick="next(1)">Appetizers</a></li>
+					<li><a onclick="next(7)">Salads</a></li>
+					<li><a onclick="next(13)">Dessert</a></li>
+					<li><a onclick="next(19)">Drinks</a></li>
 				</ul>
+
+				<div class="gallery-container">
+					<ul class="main-submenu-info main-submenu-first">
+						<li>
+							<a>
+								<!-- The conent of the food name and discribtion and price should be changed with different resturant-->
+								<div class="food-name">
+									<p id="food1">House Salad</p>
+								</div>
+								<div class="food-price">
+									<p><span id="price1">$4</span></p>
+								</div>
+								<div class="img-bg"></div>
+								<img class="food-img" id="ResturantA1" src="images/1.jpg">
+							</a>
+							<div class="float-left" id="Des1">
+								<p>Mixed greens with house salad dressing</p>
+							</div>
+							<div class="float-right"><img src="images/Pluse.jpg" onclick="minusAmount(1)"></div>
+							<div class="float-right"><img src="images/1.jpg" onclick="addAmount(1)"></div>
+						</li>
+
+						<li>
+							<a>
+								<div class="food-name">
+									<p id="food2">Sunomono Salad</p>
+								</div>
+								<div class="food-price">
+									<p><span id="price2">5</span></p>
+								</div>
+								<div class="img-bg"></div>
+								<img class="food-img" id="ResturantA2" src="images/2.jpg"></a>
+							<div class="float-left" id="Des2">
+								<p>Japanese starch noodles, pickled cucumbers</p>
+							</div>
+							<div class="float-right"><img src="images/Pluse.jpg" onclick="minusAmount(2)"></div>
+							<div class="float-right"><img src="images/1.jpg" onclick="addAmount(2)"></div>
+						</li>
+
+						<li>
+							<a>
+								<div class="food-name">
+									<p id="food3">Wakame Salad</p>
+								</div>
+								<div class="food-price">
+									<p><span id="price3">7</span></p>
+								</div>
+								<div class="img-bg"></div>
+								<img class="food-img" id="ResturantA3" src="images/3.jpg"></a>
+							<div class="float-left" id="Des3">
+								<p>Mixed seaweed salad</p>
+							</div>
+							<div class="float-right"><img src="images/Pluse.jpg" onclick="minusAmount(3)"></div>
+							<div class="float-right"><img src="images/1.jpg" onclick="addAmount(3)"></div>
+						</li>
+
+						<li>
+							<a>
+								<div class="food-name">
+									<p id="food4">Gomae</p>
+								</div>
+								<div class="food-price">
+									<p><span id="price4">4</span></p>
+								</div>
+								<div class="img-bg"></div>
+								<img class="food-img" id="ResturantA4" src="images/4.jpg"></a>
+							<div class="float-left" id="Des4">
+								<p>oiled spinach in the sesame dressing</p>
+							</div>
+							<div class="float-right"><img src="images/Pluse.jpg" onclick="minusAmount(4)"></div>
+							<div class="float-right"><img src="images/1.jpg" onclick="addAmount(4)"></div>
+						</li>
+
+						<li>
+							<a>
+								<div class="food-name">
+									<p id="food5">Tuna Gomae</p>
+								</div>
+								<div class="food-price">
+									<p><span id="price5">8</span></p>
+								</div>
+								<div class="img-bg"></div>
+								<img class="food-img" id="ResturantA5" src="images/5.jpg"></a>
+							<div class="float-left" id="Des5">
+								<p>Tuna, avocado, asparagus, and boiled spinach</p>
+							</div>
+							<div class="float-right"><img src="images/Pluse.jpg" onclick="minusAmount(5)"></div>
+							<div class="float-right"><img src="images/1.jpg" onclick="addAmount(5)"></div>
+						</li>
+
+						<li>
+							<a>
+								<div class="food-name">
+									<p id="food6">Creamy Spicy Tempura</p>
+								</div>
+								<div class="food-price">
+									<p><span id="price6">11</span></p>
+								</div>
+								<div class="img-bg"></div>
+								<img class="food-img" id="ResturantA6" src="images/6.jpg"></a>
+							<div class="float-left" id="Des6">
+								<p>Tempura, mango, and green onions</p>
+							</div>
+							<div class="float-right"><img src="images/Pluse.jpg" onclick="minusAmount(6)"></div>
+							<div class="float-right"><img src="images/1.jpg" onclick="addAmount(6)"></div>
+						</li>
+
+					</ul>
+
+				</div>
+
 			</div>
+
+			<div class="order-list">
+				<table>
+					<tr>
+						<th>Food</th>
+						<th>Amount</th>
+						<th>Price</th>
+					</tr>
+					<tr>
+						<td id="Row1"></td>
+						<td id="Amount1"></td>
+						<td id="Prices1"></td>
+					</tr>
+					<tr>
+						<td id="Row2"></td>
+						<td id="Amount2"></td>
+						<td id="Prices2"></td>
+					</tr>
+					<tr>
+						<td id="Row3"></td>
+						<td id="Amount3"></td>
+						<td id="Prices3"></td>
+					</tr>
+					<tr>
+						<td id="Row4"></td>
+						<td id="Amount4"></td>
+						<td id="Prices4"></td>
+					</tr>
+					<tr>
+						<td id="Row5"></td>
+						<td id="Amount5"></td>
+						<td id="Prices5"></td>
+					</tr>
+					<tr>
+						<td id="Row6"></td>
+						<td id="Amount6"></td>
+						<td id="Prices6"></td>
+					</tr>
+					<tr>
+						<td id="Row7"></td>
+						<td id="Amount7"></td>
+						<td id="Prices7"></td>
+					</tr>
+					<tr>
+						<td id="hui"></td>
+						<td></td>
+						<td>Total</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td> <a href="Confirm.html"><input type="button" value="Check Out" /></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+
 		</div>
-
-
-		<div class="order-list">
-			<table>
-				<tr>
-					<th>Food</th>
-					<th>Amount</th>
-					<th>Price</th>
-				</tr>
-				<tr>
-					<td id="Row1"></td>
-					<td id="Amount1"></td>
-					<td id="Prices1"></td>
-				</tr>
-				<tr>
-					<td id="Row2"></td>
-					<td id="Amount2"></td>
-					<td id="Prices2"></td>
-				</tr>
-				<tr>
-					<td id="Row3"></td>
-					<td id="Amount3"></td>
-					<td id="Prices3"></td>
-				</tr>
-				<tr>
-					<td id="Row4"></td>
-					<td id="Amount4"></td>
-					<td id="Prices4"></td>
-				</tr>
-				<tr>
-					<td id="Row5"></td>
-					<td id="Amount5"></td>
-					<td id="Prices5"></td>
-				</tr>
-				<tr>
-					<td id="Row6"></td>
-					<td id="Amount6"></td>
-					<td id="Prices6"></td>
-				</tr>
-				<tr>
-					<td id="Row7"></td>
-					<td id="Amount7"></td>
-					<td id="Prices7"></td>
-				</tr>
-				<tr>
-					<td id="hui"></td>
-					<td></td>
-					<td>Total</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td> <a href="Confirm.html"><input type="button" value="Check Out" /></a>
-					</td>
-				</tr>
-			</table>
-		</div>
-
 	</main>
 </body>
 
