@@ -6,10 +6,13 @@
 
 body{
 	font-family: sans-serif;
+	background-color: #e8e8e8;
 }
 
 .main-container {
 	padding-top: 80px;
+	height: 800px;
+	background-color: #e8e8e8;
 }
 
 .my-order {

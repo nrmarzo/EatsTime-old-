@@ -43,7 +43,7 @@
 			var f = "Payment Method: " + document.getElementById("5").options[document.getElementById("5").selectedIndex].text;
 			var g = "Delivery Time: " + document.getElementById("6").value;
 			var h = "Promotion Code: " + document.getElementById("7").value;
-			var i = "Delivery Driver Instructions" + document.getElementById("8").value;
+			var i = "Delivery Driver Instructions: " + document.getElementById("8").value;
 			var z = a + "\n" + b + "\n" + c + "\n" + d + "\n" + e + "\n" + f + "\n" + g + "\n" + h + "\n" + i;
 			alert(z);
 			/*for (var i = 0; i < 8; i++)
@@ -144,10 +144,12 @@
 			</tr>
 			<tr>
 				<td align="center"> <br> <br>
-					<img src="back.png" width="127" height="39" onclick="fk()">
+					<a href="../confirm-order/confirm-order.html">
+						<img src="back.png" width="127" height="39">
+					</a>
 				</td>
 				<td align="center"> <br> <br>
-					<img src="next.png" onclick="fk()" width="127" height="39">
+					<img src="checkout.png" onclick="fk()" width="200" height="39">
 				</td>
 			</tr>
 		</table>

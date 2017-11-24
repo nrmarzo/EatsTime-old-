@@ -162,7 +162,7 @@
 				document.getElementById("Des2").innerHTML = "Japanese starch noodles, pickled cucumbers";
 				document.getElementById("price2").innerHTML = 5;
 				document.getElementById("food3").innerHTML = "Wakame Salad";
-				document.getElementById("Des3").innerHTML = "Mixed seaweed salad";
+				document.getElementById("Des3").innerHTML = "Mixed seaweed salad with salt seasoning";
 				document.getElementById("price3").innerHTML = 7;
 				document.getElementById("food4").innerHTML = "Gomae";
 				document.getElementById("Des4").innerHTML = "Boiled spinach in the sesame dressing";
@@ -253,9 +253,12 @@
 
 					<ul class="main-submenu">
 						<li><a onclick="next(1)">Appetizers</a></li>
-						<li><a onclick="next(7)">Salads</a></li>
+						<li><a >Salads</a></li>
+						<li><a >Dessert</a></li>
+						<li><a >Drinks</a></li>
+						<!-- <li><a onclick="next(7)">Salads</a></li>
 						<li><a onclick="next(13)">Dessert</a></li>
-						<li><a onclick="next(19)">Drinks</a></li>
+						<li><a onclick="next(19)">Drinks</a></li> -->
 					</ul>
 
 					<!-- </div> -->
@@ -326,7 +329,7 @@
 									<div class="img-bg"></div>
 									<img class="food-img" id="ResturantA4" src="images/4.jpg" height="200"></a>
 								<div class="float-left" id="Des4">
-									<p>oiled spinach in the sesame dressing</p>
+									<p>Boiled spinach in the sesame dressing</p>
 								</div>
 								<div class="float-right"><img src="images/minus.png" onclick="minusAmount(4)"></div>
 								<div class="float-right"><img src="images/plus.png" onclick="addAmount(4)"></div>
@@ -427,13 +430,8 @@
 							<td class="quantity" ></td>
 							<td class="price" id="hui">$ 0.00</td>
 						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td> <a href="../confirm-order/confirm-order.html"><input type="button" value="Check Out" /></a>
-							</td>
-						</tr>
-					</table>
+				</table>
+					<a href="../confirm-order/confirm-order.html"><img src="images/checkout.png"  width="175" height="39" alt="checkout"></a>
 				</div>
 			</div>
 

@@ -8480,5 +8480,11 @@ main li {
 }
 
 .main-container {
+	background-color: #e8e8e8;
 	padding-top: 80px;
+}
+
+body {
+	background-color: #e8e8e8;
+
 }
