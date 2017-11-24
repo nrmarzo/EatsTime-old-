@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main-container {
+	padding-top: 80px;
+}
+
+.my-order {
+	padding: 20px 0px 10px 50px;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.table {
+	margin: 0 auto;
+	/*align-self: center;*/
+	height: 50px;
+	/*width: 800px;*/
+	/*border-collapse: collapse;*/
+}
+
+
+
+th td {
+	text-align: right;
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+}
+
+td {
+	height: 50px;
+}
+
+.item {
+	width: 200px;
+}
+
+.amount {
+	text-align: right;
+	width: 100px;
+}
+
+.prices {
+	width: 100px;
+	text-align: right;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2
+}
