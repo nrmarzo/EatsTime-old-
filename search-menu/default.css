@@ -5929,18 +5929,36 @@ main li {
 	list-style: none;
 }
 
+.container-1 {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
 .main-container {
 	display: flex;
 	/*justify-content: space-between;*/
-	background-color: grey;
+	/*background-color: grey;*/
+}
+
+.fixed {
+	display: flex;
+}
+
+main {
+	background-color: #e8e8e8;
+
 }
 
 .resto-container {
+	align-self: flex-start;
 	width: 100%;
-	height: 200px;
-	background-color: green;
+	height: 100px;
+	/*background-color: green;*/
 	border-radius: 15px;
-	justify-content: flex-start;
+	text-align: left;
+	font-weight: bold;
+	font-size: 2em;
 }
 
 .resto-img {
@@ -5950,7 +5968,10 @@ main li {
 }
 
 .sub-container-1 {
+	background-color: #e8e8e8;
+	width: 100%;
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 }
 
@@ -5971,10 +5992,9 @@ main li {
 }
 
 .gallery-container {
-
-	background-color: blue;
+	background-color: #e8e8e8;
 	margin-top: 40px;
-	height: 750px;
+	height: 500px;
 	overflow: auto;
 	width: 100%;
 	padding: 15px;
@@ -5986,12 +6006,21 @@ main li {
 	width: 800px;
 }
 
-.order-list {
-	/*position: fixed;*/
+.order-list-container {
+	display: flex;
+	margin-left: 50px;
+	/*align-self: flex-end;*/
+	/*width: 45%;*/
+}
 
+.current-order {
+	text-align: left;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.order-list {
 	max-width: 100%;
-	background-color: blue;
-	border: 1px solid red;
 	padding: 20px;
 
 }
@@ -6012,16 +6041,32 @@ main li {
 }
 
 .order-list tr:nth-child(even) {
-	background-color: #f2f2f2
+	background-color: #dde5ff
+}
+
+.item-name {
+	text-align: center;
+	width: 200px;
+}
+
+.quantity {
+	text-align: right;
+	width: 100px;
+}
+
+.price {
+	width: 100px;
+	text-align: right;
 }
 
 .main-submenu {
+	background-color: #e8e8e8;
 	/*align-self: flex-start;*/
 	/*position: fixed;*/
-	border: 1px solid red;
-	/*max-width: 1100px;*/
-	margin: 0 auto;
-	padding: 0;
+	margin-left:200px;
+	/*border: 1px solid red;*/
+	/*margin: 0 auto;*/
+	/*margin-top: 100px;*/
 }
 
 .JustbackGround {
@@ -6032,11 +6077,11 @@ main li {
 
 .main-submenu li {
 	display: inline-block;
-	padding: 5px 25px;
+	padding: 0 25px;
 }
 
 .main-submenu li a {
-	font-size: 22px;
+	font-size: 20px;
 	/*  font-weight: bold;*/
 	color: #000000;
 	text-decoration: none;
