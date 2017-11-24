@@ -54,28 +54,24 @@
 			}*/
 			//alert(d);
 			if (confirm("Are you sure that all the information is correct?")) {
-				location.href = "http://www.google.ca";
+				location.href = "../end-of-order.html";
 			}
 		}
 	</script>
 
 	<div class="main-container">
 
-
-		<table style="width:40%" align="center">
+		<div class="my-information">
+			My Information
+		</div>
+		<table style="width:40%;" align="left">
 			<tr>
-				<th colspan="2" align="center">YOUR INFORMATION</th>
-			</tr>
-
-			<tr>
-				<td align="center"> <br> <br>First Name</td>
+				<td align="center">First Name</td>
 				<td align="center">
-					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 forming">
 						<form role="form">
-							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
-									<br>
-									<br>
+
+
 									<input type="text" class="form-control" id="0" placeholder="First Name">
 								</div>
 				</td>
@@ -83,7 +79,6 @@
 			<tr>
 				<td align="center">Last Name</td>
 				<td align="center">
-					<div class="col-md-6 col-sm-6">
 						<div class="form-group">
 							<input type="text" class="form-control" id="1" placeholder="Last Name">
 						</div>
@@ -115,7 +110,7 @@
 			</tr>
 			<tr>
 				<td align="center">Payment Method</td>
-				<td align="center"> <select id="5">
+				<td align="left" style="padding-bottom:1em"> <select id="5">
       <option value = "0">Cash</option>
       <option value = "1">Credit Card</option>
       <option value = "2">Debit Card</option>
@@ -148,10 +143,10 @@
 				</td>
 			</tr>
 			<tr>
-				<td align="center"> <br> <br> <br> <br>
+				<td align="center"> <br> <br>
 					<img src="back.png" width="127" height="39" onclick="fk()">
 				</td>
-				<td align="center"> <br> <br> <br> <br>
+				<td align="center"> <br> <br>
 					<img src="next.png" onclick="fk()" width="127" height="39">
 				</td>
 			</tr>

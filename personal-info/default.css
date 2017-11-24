@@ -1,4 +1,11 @@
 
+.my-information {
+	padding: 20px;
+	font-weight: bolder;
+	font-size: 2em;
+	margin-left: 2%;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
