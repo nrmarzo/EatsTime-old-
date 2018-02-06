@@ -1,4 +1,4 @@
-# Eats Time
+# Eat's Time
 Eat's Time
 - a food delivery website
 
