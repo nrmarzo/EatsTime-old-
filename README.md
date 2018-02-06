@@ -1,9 +1,10 @@
-# food-del-sys
-Food Delivery System
+# EatsTime
+Eat's Time
+- a food delivery website
 
 What is the nature of the project?
 
-The Food Delivery System is a project that aims to be used as an alternative way to order food. Rather than ordering directly from a restaurant’s delivery system, the Food Delivery System can give an array of restaurant options. This gives users an easier way of finding different restaurants without scouring a multitude of restaurant sites. 
+Eat's Time is a project that aims to be used as an alternative way to order food. Rather than ordering directly from a restaurant’s delivery system, Eat's Time can give an array of restaurant options. This gives users an easier way of finding different restaurants without scouring a multitude of restaurant sites. 
 
 
 What are the uses of the system?
@@ -13,7 +14,7 @@ The system will be used in two ways. First, the user will be able to find differ
 
 Who will use the system?
 
-The Food Delivery System will mainly be used by students, single people, young workers, small companies, and generally people looking to order food.
+Eat's Time will mainly be used by students, single people, young workers, small companies, and generally people looking to order food.
 
 
 What is the expected use of the system?
